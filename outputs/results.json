@@ -1,0 +1,1402 @@
+{
+ "validation": {
+  "raw_rows": 27800,
+  "raw_cols": [
+   "date",
+   "position",
+   "song",
+   "artist",
+   "popularity",
+   "duration_ms",
+   "album_type",
+   "total_tracks",
+   "is_explicit",
+   "album_cover_url"
+  ],
+  "nulls": 0,
+  "date_min": "2024-05-18",
+  "date_max": "2025-11-27",
+  "calendar_days": 559,
+  "observed_days": 555,
+  "missing_dates": [
+   "2025-03-14",
+   "2025-03-25",
+   "2025-07-11",
+   "2025-08-13"
+  ],
+  "days_not_50": {
+   "2025-03-01": 100
+  },
+  "exact_duplicate_rows": 15,
+  "dup_date_position": 50,
+  "double_snapshot_rows_dropped": 50,
+  "zero_popularity_rows": 106,
+  "distinct_raw_song_artist": 583,
+  "distinct_song_ids": 543,
+  "same_song_twice_same_day_dropped": 0,
+  "final_rows": 27750,
+  "final_days": 555,
+  "rows_per_day_min": 50,
+  "rows_per_day_max": 50
+ },
+ "n_songs": 543,
+ "left_censored": 50,
+ "right_censored": 50,
+ "reentry_songs": 193,
+ "reentry_share": 0.35543278084714547,
+ "runs_total": 973,
+ "reentry_gap_days_median": 4.0,
+ "reentry_gap_le3_share": 0.4790697674418605,
+ "eligible_songs": 493,
+ "eligible_completed": 443,
+ "total_days_desc": {
+  "count": 493.0,
+  "mean": 45.83772819472617,
+  "std": 71.81538292104766,
+  "min": 1.0,
+  "25%": 3.0,
+  "50%": 11.0,
+  "75%": 59.0,
+  "max": 463.0
+ },
+ "survival_le3d_share": 0.25760649087221094,
+ "survival_le7d_share": 0.4340770791075051,
+ "survival_ge30d_share": 0.3488843813387424,
+ "survival_ge90d_share": 0.18864097363083165,
+ "reached_top10_share": 0.30425963488843816,
+ "reached_top1_share": 0.07099391480730223,
+ "time_to_peak_desc": {
+  "count": 493.0,
+  "mean": 10.33265720081136,
+  "std": 30.854413060748808,
+  "min": 0.0,
+  "25%": 0.0,
+  "50%": 0.0,
+  "75%": 9.0,
+  "max": 426.0
+ },
+ "time_to_peak_reached_first_week": 0.7322515212981744,
+ "entry_position_desc": {
+  "count": 493.0,
+  "mean": 31.050709939148074,
+  "std": 15.852453084740706,
+  "min": 1.0,
+  "25%": 16.0,
+  "50%": 36.0,
+  "75%": 46.0,
+  "max": 50.0
+ },
+ "entry_pos_top10_share": 0.15821501014198783,
+ "entry_pos_bottom10_share": 0.385395537525355,
+ "km_median_all": 13.0,
+ "km_s30": 0.38742900546376147,
+ "km_s90": 0.22388286111899933,
+ "km_s7": 0.6021981478659651,
+ "stage_share_songdays": {
+  "Mature": 0.33556756756756756,
+  "Decline": 0.2731171171171171,
+  "Peak": 0.1532972972972973,
+  "Growth": 0.13935135135135135,
+  "New Entry": 0.09326126126126126,
+  "Unclassified": 0.005405405405405406
+ },
+ "dominant_stage_counts": {
+  "New Entry": 214,
+  "Decline": 153,
+  "Mature": 120,
+  "Peak": 35,
+  "Growth": 18,
+  "Unclassified": 3
+ },
+ "stage_transition": {
+  "New Entry": {
+   "New Entry": 0.88,
+   "Growth": 0.0,
+   "Peak": 0.0,
+   "Mature": 0.0,
+   "Decline": 0.0
+  },
+  "Growth": {
+   "New Entry": 0.0631,
+   "Growth": 0.6957,
+   "Peak": 0.0151,
+   "Mature": 0.1011,
+   "Decline": 0.0093
+  },
+  "Peak": {
+   "New Entry": 0.0079,
+   "Growth": 0.0334,
+   "Peak": 0.9175,
+   "Mature": 0.0109,
+   "Decline": 0.0141
+  },
+  "Mature": {
+   "New Entry": 0.0175,
+   "Growth": 0.2483,
+   "Peak": 0.0327,
+   "Mature": 0.7247,
+   "Decline": 0.2034
+  },
+  "Decline": {
+   "New Entry": 0.0315,
+   "Growth": 0.0226,
+   "Peak": 0.0348,
+   "Mature": 0.1633,
+   "Decline": 0.7732
+  }
+ },
+ "stage_sensitivity": [
+  {
+   "slope_thr": 0.25,
+   "peak_max_std": 2.0,
+   "New Entry": 0.09326126126126126,
+   "Growth": 0.21113513513513513,
+   "Peak": 0.1180900900900901,
+   "Mature": 0.18158558558558557,
+   "Decline": 0.3905225225225225,
+   "Unclassified": 0.005405405405405406
+  },
+  {
+   "slope_thr": 0.25,
+   "peak_max_std": 3.0,
+   "New Entry": 0.09326126126126126,
+   "Growth": 0.21113513513513513,
+   "Peak": 0.11834234234234234,
+   "Mature": 0.18133333333333335,
+   "Decline": 0.3905225225225225,
+   "Unclassified": 0.005405405405405406
+  },
+  {
+   "slope_thr": 0.25,
+   "peak_max_std": 4.0,
+   "New Entry": 0.09326126126126126,
+   "Growth": 0.21113513513513513,
+   "Peak": 0.11845045045045045,
+   "Mature": 0.18122522522522522,
+   "Decline": 0.3905225225225225,
+   "Unclassified": 0.005405405405405406
+  },
+  {
+   "slope_thr": 0.5,
+   "peak_max_std": 2.0,
+   "New Entry": 0.09326126126126126,
+   "Growth": 0.13935135135135135,
+   "Peak": 0.1527207207207207,
+   "Mature": 0.3361441441441441,
+   "Decline": 0.2731171171171171,
+   "Unclassified": 0.005405405405405406
+  },
+  {
+   "slope_thr": 0.5,
+   "peak_max_std": 3.0,
+   "New Entry": 0.09326126126126126,
+   "Growth": 0.13935135135135135,
+   "Peak": 0.1532972972972973,
+   "Mature": 0.33556756756756756,
+   "Decline": 0.2731171171171171,
+   "Unclassified": 0.005405405405405406
+  },
+  {
+   "slope_thr": 0.5,
+   "peak_max_std": 4.0,
+   "New Entry": 0.09326126126126126,
+   "Growth": 0.13935135135135135,
+   "Peak": 0.15354954954954955,
+   "Mature": 0.33531531531531533,
+   "Decline": 0.2731171171171171,
+   "Unclassified": 0.005405405405405406
+  },
+  {
+   "slope_thr": 1.0,
+   "peak_max_std": 2.0,
+   "New Entry": 0.09326126126126126,
+   "Growth": 0.06702702702702702,
+   "Peak": 0.16951351351351351,
+   "Mature": 0.5303423423423423,
+   "Decline": 0.13445045045045045,
+   "Unclassified": 0.005405405405405406
+  },
+  {
+   "slope_thr": 1.0,
+   "peak_max_std": 3.0,
+   "New Entry": 0.09326126126126126,
+   "Growth": 0.06702702702702702,
+   "Peak": 0.17246846846846847,
+   "Mature": 0.5273873873873874,
+   "Decline": 0.13445045045045045,
+   "Unclassified": 0.005405405405405406
+  },
+  {
+   "slope_thr": 1.0,
+   "peak_max_std": 4.0,
+   "New Entry": 0.09326126126126126,
+   "Growth": 0.06702702702702702,
+   "Peak": 0.1731171171171171,
+   "Mature": 0.5267387387387388,
+   "Decline": 0.13445045045045045,
+   "Unclassified": 0.005405405405405406
+  }
+ ],
+ "mean_days_per_stage": {
+  "Decline": 12.265720081135903,
+  "Growth": 6.425963488843814,
+  "Mature": 13.918864097363084,
+  "New Entry": 5.249492900608519,
+  "Peak": 7.9776876267748476,
+  "Unclassified": 0.0
+ },
+ "flow_days": 550,
+ "flow_days_excluded_gap": 4,
+ "entries_per_day_mean": 1.6654545454545455,
+ "entries_per_day_median": 1.0,
+ "churn_mean": 0.033309090909090906,
+ "churn_std": 0.04836446057314071,
+ "churn_cv": 1.4519898097831547,
+ "zero_entry_days_share": 0.2909090909090909,
+ "shock_thr": 8,
+ "shock_days": 14,
+ "churn_excl_shocks": 0.027201492537313434,
+ "entries_share_from_shocks": 0.20414847161572053,
+ "shock_days_detail": [
+  {
+   "date": "2024-08-30",
+   "entries": 15,
+   "top_artist": "mora",
+   "top_artist_entries": 15,
+   "top10_new": 7,
+   "missing_pop": 15
+  },
+  {
+   "date": "2024-10-07",
+   "entries": 8,
+   "top_artist": "bizarrap",
+   "top_artist_entries": 4,
+   "top10_new": 2,
+   "missing_pop": 1
+  },
+  {
+   "date": "2024-10-14",
+   "entries": 20,
+   "top_artist": "bad bunny",
+   "top_artist_entries": 20,
+   "top10_new": 9,
+   "missing_pop": 22
+  },
+  {
+   "date": "2024-11-25",
+   "entries": 8,
+   "top_artist": "myke towers",
+   "top_artist_entries": 7,
+   "top10_new": 1,
+   "missing_pop": 8
+  },
+  {
+   "date": "2024-12-25",
+   "entries": 12,
+   "top_artist": "michael buble",
+   "top_artist_entries": 2,
+   "top10_new": 5,
+   "missing_pop": 0
+  },
+  {
+   "date": "2024-12-28",
+   "entries": 13,
+   "top_artist": "bad bunny",
+   "top_artist_entries": 2,
+   "top10_new": 2,
+   "missing_pop": 0
+  },
+  {
+   "date": "2025-01-21",
+   "entries": 16,
+   "top_artist": "eladio carrion",
+   "top_artist_entries": 16,
+   "top10_new": 2,
+   "missing_pop": 0
+  },
+  {
+   "date": "2025-01-22",
+   "entries": 10,
+   "top_artist": "sebastian yatra",
+   "top_artist_entries": 1,
+   "top10_new": 2,
+   "missing_pop": 0
+  },
+  {
+   "date": "2025-04-28",
+   "entries": 21,
+   "top_artist": "saiko",
+   "top_artist_entries": 14,
+   "top10_new": 4,
+   "missing_pop": 0
+  },
+  {
+   "date": "2025-08-24",
+   "entries": 13,
+   "top_artist": "myke towers",
+   "top_artist_entries": 11,
+   "top10_new": 1,
+   "missing_pop": 14
+  },
+  {
+   "date": "2025-08-25",
+   "entries": 9,
+   "top_artist": "sebastian yatra",
+   "top_artist_entries": 1,
+   "top10_new": 1,
+   "missing_pop": 0
+  },
+  {
+   "date": "2025-11-03",
+   "entries": 8,
+   "top_artist": "duki",
+   "top_artist_entries": 8,
+   "top10_new": 1,
+   "missing_pop": 0
+  },
+  {
+   "date": "2025-11-17",
+   "entries": 15,
+   "top_artist": "rauw alejandro",
+   "top_artist_entries": 15,
+   "top10_new": 3,
+   "missing_pop": 0
+  },
+  {
+   "date": "2025-11-24",
+   "entries": 19,
+   "top_artist": "quevedo",
+   "top_artist_entries": 17,
+   "top10_new": 10,
+   "missing_pop": 0
+  }
+ ],
+ "monthly_churn": {
+  "2024-05": 0.03076923076923077,
+  "2024-06": 0.023333333333333334,
+  "2024-07": 0.01935483870967742,
+  "2024-08": 0.021290322580645157,
+  "2024-09": 0.02333333333333333,
+  "2024-10": 0.03741935483870968,
+  "2024-11": 0.028666666666666667,
+  "2024-12": 0.041935483870967745,
+  "2025-01": 0.04,
+  "2025-02": 0.019285714285714288,
+  "2025-03": 0.0362962962962963,
+  "2025-04": 0.051333333333333335,
+  "2025-05": 0.032903225806451615,
+  "2025-06": 0.038000000000000006,
+  "2025-07": 0.030344827586206897,
+  "2025-08": 0.03586206896551724,
+  "2025-09": 0.028666666666666667,
+  "2025-10": 0.03032258064516129,
+  "2025-11": 0.06518518518518518
+ },
+ "monthly_churn_excl_shocks": {
+  "2024-05": 0.03076923076923077,
+  "2024-06": 0.023333333333333334,
+  "2024-07": 0.01935483870967742,
+  "2024-08": 0.012,
+  "2024-09": 0.02333333333333333,
+  "2024-10": 0.020689655172413793,
+  "2024-11": 0.02413793103448276,
+  "2024-12": 0.027586206896551727,
+  "2025-01": 0.02482758620689655,
+  "2025-02": 0.019285714285714288,
+  "2025-03": 0.0362962962962963,
+  "2025-04": 0.038620689655172416,
+  "2025-05": 0.032903225806451615,
+  "2025-06": 0.038000000000000006,
+  "2025-07": 0.030344827586206897,
+  "2025-08": 0.022222222222222223,
+  "2025-09": 0.028666666666666667,
+  "2025-10": 0.03032258064516129,
+  "2025-11": 0.03833333333333334
+ },
+ "weekday_entries": {
+  "Friday": 1.4415584415584415,
+  "Monday": 3.175,
+  "Saturday": 1.2207792207792207,
+  "Sunday": 1.0125,
+  "Thursday": 1.1012658227848102,
+  "Tuesday": 2.392405063291139,
+  "Wednesday": 1.2820512820512822
+ },
+ "weekday_entries_excl_shocks": {
+  "Friday": 1.263157894736842,
+  "Monday": 2.0277777777777777,
+  "Saturday": 1.0657894736842106,
+  "Sunday": 0.8607594936708861,
+  "Thursday": 1.1012658227848102,
+  "Tuesday": 2.217948717948718,
+  "Wednesday": 1.0263157894736843
+ },
+ "weekday_kruskal_p_excl_shocks": 7.453564027612736e-10,
+ "position_churn_top10": 0.3548736462093863,
+ "position_churn_11_40": 0.7064981949458484,
+ "position_churn_bottom10": 0.7509025270758123,
+ "position_churn_by_rank": {
+  "1": 0.11010830324909747,
+  "2": 0.19133574007220217,
+  "3": 0.27978339350180503,
+  "4": 0.3303249097472924,
+  "5": 0.3628158844765343,
+  "6": 0.3935018050541516,
+  "7": 0.41155234657039713,
+  "8": 0.4675090252707581,
+  "9": 0.48736462093862815,
+  "10": 0.5144404332129964,
+  "11": 0.5794223826714802,
+  "12": 0.5884476534296029,
+  "13": 0.5938628158844765,
+  "14": 0.6353790613718412,
+  "15": 0.6245487364620939,
+  "16": 0.6678700361010831,
+  "17": 0.6642599277978339,
+  "18": 0.648014440433213,
+  "19": 0.6931407942238267,
+  "20": 0.6823104693140795,
+  "21": 0.6895306859205776,
+  "22": 0.6949458483754513,
+  "23": 0.7021660649819494,
+  "24": 0.7129963898916968,
+  "25": 0.6913357400722022,
+  "26": 0.7111913357400722,
+  "27": 0.7166064981949458,
+  "28": 0.723826714801444,
+  "29": 0.759927797833935,
+  "30": 0.7454873646209387,
+  "31": 0.7671480144404332,
+  "32": 0.7743682310469314,
+  "33": 0.7725631768953068,
+  "34": 0.7725631768953068,
+  "35": 0.7671480144404332,
+  "36": 0.7653429602888087,
+  "37": 0.759927797833935,
+  "38": 0.7545126353790613,
+  "39": 0.7581227436823105,
+  "40": 0.7779783393501805,
+  "41": 0.7436823104693141,
+  "42": 0.7454873646209387,
+  "43": 0.7418772563176895,
+  "44": 0.7653429602888087,
+  "45": 0.7418772563176895,
+  "46": 0.7364620938628159,
+  "47": 0.7545126353790613,
+  "48": 0.7635379061371841,
+  "49": 0.7707581227436823,
+  "50": 0.7454873646209387
+ },
+ "top10_turnover_mean": 0.05945454545454546,
+ "daily_rank_move_abs_mean": 1.8260073944056467,
+ "daily_rank_move_share_le2": 0.7686073869365501,
+ "rank_move_by_position_bucket": {
+  "1-10": 0.5683150183150183,
+  "41-50": 2.497588424437299
+ },
+ "artist_hhi": 0.020342034575115655,
+ "artist_top10_share": 0.36028828828828824,
+ "artist_top1": [
+  "saiko",
+  0.05628828828828829
+ ],
+ "n_primary_artists": 201,
+ "artist_top10": {
+  "saiko": 0.05628828828828829,
+  "myke towers": 0.04861261261261261,
+  "quevedo": 0.04590990990990991,
+  "karol g": 0.03513513513513514,
+  "feid": 0.034522522522522525,
+  "dei v": 0.030306306306306305,
+  "bad bunny": 0.02954954954954955,
+  "mora": 0.029333333333333333,
+  "lola indigo": 0.025873873873873875,
+  "jc reyes": 0.024756756756756756
+ },
+ "max_songs_one_artist_one_day": 21,
+ "days_with_artist_ge5": 193,
+ "mean_max_artist_songs_per_day": 4.848648648648648,
+ "counts_explicit": {
+  "explicit": 227,
+  "clean": 266
+ },
+ "explicit_share_songs": 0.4438305709023941,
+ "explicit_share_songdays": 0.41927927927927927,
+ "cmp_explicit_all_eligible": {
+  "explicit": {
+   "n": 227,
+   "mean": 47.61233480176212,
+   "median": 11.0
+  },
+  "clean": {
+   "n": 266,
+   "mean": 44.32330827067669,
+   "median": 10.0
+  },
+  "mannwhitney_p": 0.7794288132952687,
+  "cliffs_delta": -0.014607002086714616,
+  "mean_ratio": 1.0742053483688485,
+  "mean_ratio_ci95": [
+   0.8043702596960443,
+   1.4127332483651902
+  ]
+ },
+ "cmp_explicit_completed": {
+  "explicit": {
+   "n": 212,
+   "mean": 47.4811320754717,
+   "median": 10.5
+  },
+  "clean": {
+   "n": 231,
+   "mean": 44.099567099567096,
+   "median": 11.0
+  },
+  "mannwhitney_p": 0.4835060944406334,
+  "cliffs_delta": -0.03843012333578366,
+  "mean_ratio": 1.076680230630604,
+  "mean_ratio_ci95": [
+   0.7945981536530805,
+   1.4614718737438515
+  ]
+ },
+ "cmp_explicit_peak": {
+  "explicit": {
+   "n": 227,
+   "mean": 20.845814977973568,
+   "median": 18.0
+  },
+  "clean": {
+   "n": 266,
+   "mean": 22.263157894736842,
+   "median": 20.5
+  },
+  "mannwhitney_p": 0.3916542737996068,
+  "cliffs_delta": -0.04473187373720644,
+  "mean_ratio": 0.9363368429822643,
+  "mean_ratio_ci95": [
+   0.8269850486505388,
+   1.057829971326399
+  ]
+ },
+ "cmp_explicit_ttp": {
+  "explicit": {
+   "n": 227,
+   "mean": 9.955947136563877,
+   "median": 0.0
+  },
+  "clean": {
+   "n": 266,
+   "mean": 10.654135338345865,
+   "median": 1.0
+  },
+  "mannwhitney_p": 0.21764965996280972,
+  "cliffs_delta": -0.060200059620416635,
+  "mean_ratio": 0.9344678681460801,
+  "mean_ratio_ci95": [
+   0.5481995036197522,
+   1.599677180403024
+  ]
+ },
+ "explicit_top10_rate": {
+  "explicit": 0.29515418502202645,
+  "clean": 0.31203007518796994
+ },
+ "explicit_top10_chi2_p": 0.7582847302772461,
+ "cmp_single_all_eligible": {
+  "single": {
+   "n": 229,
+   "mean": 58.99126637554585,
+   "median": 26.0
+  },
+  "album": {
+   "n": 264,
+   "mean": 34.428030303030305,
+   "median": 6.0
+  },
+  "mannwhitney_p": 3.687120858174817e-07,
+  "cliffs_delta": 0.26473799126637565,
+  "mean_ratio": 1.7134662034485755,
+  "mean_ratio_ci95": [
+   1.3052351460759986,
+   2.3048275793804636
+  ]
+ },
+ "cmp_single_peak": {
+  "single": {
+   "n": 229,
+   "mean": 21.100436681222707,
+   "median": 17.0
+  },
+  "album": {
+   "n": 264,
+   "mean": 22.053030303030305,
+   "median": 20.0
+  },
+  "mannwhitney_p": 0.3496002393908033,
+  "cliffs_delta": -0.048812359401879,
+  "mean_ratio": 0.9568044115154233,
+  "mean_ratio_ci95": [
+   0.8380788042684311,
+   1.083891268925179
+  ]
+ },
+ "cmp_single_ttp": {
+  "single": {
+   "n": 229,
+   "mean": 11.039301310043669,
+   "median": 4.0
+  },
+  "album": {
+   "n": 264,
+   "mean": 9.719696969696969,
+   "median": 0.0
+  },
+  "mannwhitney_p": 1.0703992225613886e-07,
+  "cliffs_delta": 0.25929601693793836,
+  "mean_ratio": 1.135765996045023,
+  "mean_ratio_ci95": [
+   0.6845160289570673,
+   1.973916143256238
+  ]
+ },
+ "cmp_single_entrypos": {
+  "single": {
+   "n": 229,
+   "mean": 33.532751091703055,
+   "median": 39.0
+  },
+  "album": {
+   "n": 264,
+   "mean": 28.897727272727273,
+   "median": 30.0
+  },
+  "mannwhitney_p": 0.0015102445285023322,
+  "cliffs_delta": 0.16549225883287022,
+  "mean_ratio": 1.1603940605858705,
+  "mean_ratio_ci95": [
+   1.0558125771549005,
+   1.2665610200270134
+  ]
+ },
+ "single_top10_rate": {
+  "single": 0.3318777292576419,
+  "album": 0.2803030303030303
+ },
+ "single_share_songs": 0.4732965009208103,
+ "single_share_songdays": 0.5769009009009008,
+ "logrank_p": {
+  "explicit": 0.7435916077951918,
+  "single": 0.00020401761339510827
+ },
+ "km_median_by_explicit": {
+  "False": 14.0,
+  "True": 12.0
+ },
+ "km_median_by_single": {
+  "False": 8.0,
+  "True": 28.0
+ },
+ "km_s30_by_explicit": {
+  "False": 0.40563260639288334,
+  "True": 0.3665469264565772
+ },
+ "km_s30_by_single": {
+  "False": 0.30331653563104954,
+  "True": 0.47947753169070406
+ },
+ "km_s30_by_entry_bucket": {
+  "1-10": 0.69200822424054,
+  "11-25": 0.25114736395541687,
+  "26-40": 0.3196767001114827,
+  "41-50": 0.38599984430772605
+ },
+ "km_median_by_entry_bucket": {
+  "1-10": 59.0,
+  "11-25": 8.0,
+  "26-40": 8.0,
+  "41-50": 13.0
+ },
+ "n_by_entry_bucket": {
+  "41-50": 190,
+  "26-40": 117,
+  "11-25": 108,
+  "1-10": 78
+ },
+ "spearman_duration_days": [
+  0.10734718490770244,
+  0.01710991502670529
+ ],
+ "spearman_tracks_days": [
+  -0.258009885500271,
+  6.139530020485194e-09
+ ],
+ "spearman_duration_peak": [
+  -0.10392066308111443,
+  0.021009845711339053
+ ],
+ "duration_bins": {
+  "<2.5": {
+   "n": 70,
+   "mean_days": 35.029,
+   "median_days": 6.5,
+   "top10": 0.3
+  },
+  "2.5-3": {
+   "n": 136,
+   "mean_days": 43.838,
+   "median_days": 9.5,
+   "top10": 0.265
+  },
+  "3-3.5": {
+   "n": 131,
+   "mean_days": 51.176,
+   "median_days": 11.0,
+   "top10": 0.344
+  },
+  "3.5-4": {
+   "n": 88,
+   "mean_days": 48.636,
+   "median_days": 14.0,
+   "top10": 0.33
+  },
+  ">4": {
+   "n": 68,
+   "mean_days": 47.059,
+   "median_days": 12.5,
+   "top10": 0.279
+  }
+ },
+ "tracks_bins": {
+  "1": {
+   "n": 206,
+   "mean_days": 62.515,
+   "median_days": 27.0,
+   "pos_std": 8.827,
+   "top10": 0.34
+  },
+  "2-3": {
+   "n": 10,
+   "mean_days": 50.0,
+   "median_days": 7.0,
+   "pos_std": 8.498,
+   "top10": 0.4
+  },
+  "4-10": {
+   "n": 59,
+   "mean_days": 33.831,
+   "median_days": 8.0,
+   "pos_std": 7.671,
+   "top10": 0.22
+  },
+  "11-20": {
+   "n": 178,
+   "mean_days": 29.815,
+   "median_days": 5.0,
+   "pos_std": 8.558,
+   "top10": 0.27
+  },
+  "21+": {
+   "n": 40,
+   "mean_days": 47.925,
+   "median_days": 8.0,
+   "pos_std": 11.606,
+   "top10": 0.375
+  }
+ },
+ "duration_median_min": 3.152433333333333,
+ "reentry_by_type": {
+  "single": 0.4017467248908297,
+  "album": 0.2840909090909091
+ },
+ "single_album_mix": {
+  "single_songs": 257,
+  "album_songs": 286
+ },
+ "album_track_size_mean_in_chart": 15.961538461538462,
+ "shock_entrants": {
+  "n": 149,
+  "mean_days_shock": 21.261744966442954,
+  "mean_days_other": 56.48255813953488,
+  "median_days_shock": 4.0,
+  "median_days_other": 20.5,
+  "top10_rate_shock": 0.28859060402684567,
+  "top10_rate_other": 0.311046511627907,
+  "mannwhitney_p": 2.0694319389319978e-12,
+  "album_share_shock": 0.8993288590604027,
+  "album_share_other": 0.37790697674418605
+ },
+ "cox": {
+  "explicit_i": {
+   "exp(coef)": 1.0294,
+   "exp(coef) lower 95%": 0.8434,
+   "exp(coef) upper 95%": 1.2563,
+   "p": 0.7757
+  },
+  "single_i": {
+   "exp(coef)": 1.3036,
+   "exp(coef) lower 95%": 0.7222,
+   "exp(coef) upper 95%": 2.3532,
+   "p": 0.379
+  },
+  "log_tracks": {
+   "exp(coef)": 1.3578,
+   "exp(coef) lower 95%": 1.0207,
+   "exp(coef) upper 95%": 1.8063,
+   "p": 0.0357
+  },
+  "duration_z": {
+   "exp(coef)": 1.043,
+   "exp(coef) lower 95%": 0.939,
+   "exp(coef) upper 95%": 1.1585,
+   "p": 0.4319
+  },
+  "entry_pos_z": {
+   "exp(coef)": 1.1869,
+   "exp(coef) lower 95%": 1.0826,
+   "exp(coef) upper 95%": 1.3012,
+   "p": 0.0003
+  },
+  "entry_pop_z": {
+   "exp(coef)": 0.8436,
+   "exp(coef) lower 95%": 0.7556,
+   "exp(coef) upper 95%": 0.9418,
+   "p": 0.0025
+  },
+  "entry_pop_missing": {
+   "exp(coef)": 9.2307,
+   "exp(coef) lower 95%": 5.5149,
+   "exp(coef) upper 95%": 15.4502,
+   "p": 0.0
+  }
+ },
+ "cox_no_pop": {
+  "explicit_i": {
+   "exp(coef)": 0.9659,
+   "exp(coef) lower 95%": 0.7956,
+   "exp(coef) upper 95%": 1.1725,
+   "p": 0.7255
+  },
+  "single_i": {
+   "exp(coef)": 1.3628,
+   "exp(coef) lower 95%": 0.7523,
+   "exp(coef) upper 95%": 2.4688,
+   "p": 0.3073
+  },
+  "log_tracks": {
+   "exp(coef)": 1.4162,
+   "exp(coef) lower 95%": 1.064,
+   "exp(coef) upper 95%": 1.8849,
+   "p": 0.0171
+  },
+  "duration_z": {
+   "exp(coef)": 1.013,
+   "exp(coef) lower 95%": 0.9115,
+   "exp(coef) upper 95%": 1.1259,
+   "p": 0.8104
+  },
+  "entry_pos_z": {
+   "exp(coef)": 1.1935,
+   "exp(coef) lower 95%": 1.0907,
+   "exp(coef) upper 95%": 1.3061,
+   "p": 0.0001
+  }
+ },
+ "cox_no_pop_concordance": 0.6258995519924546,
+ "entry_pop_missing_share": 0.04056795131845842,
+ "entry_pop_missing_album_share": 0.95,
+ "entry_pop_missing_median_days": [
+  1.0,
+  12.0
+ ],
+ "cox_complete_pop": {
+  "explicit_i": {
+   "exp(coef)": 1.0001,
+   "exp(coef) lower 95%": 0.8159,
+   "exp(coef) upper 95%": 1.226,
+   "p": 0.9989
+  },
+  "single_i": {
+   "exp(coef)": 1.2773,
+   "exp(coef) lower 95%": 0.6978,
+   "exp(coef) upper 95%": 2.338,
+   "p": 0.4275
+  },
+  "log_tracks": {
+   "exp(coef)": 1.3471,
+   "exp(coef) lower 95%": 1.0063,
+   "exp(coef) upper 95%": 1.8034,
+   "p": 0.0453
+  },
+  "duration_z": {
+   "exp(coef)": 1.0436,
+   "exp(coef) lower 95%": 0.9383,
+   "exp(coef) upper 95%": 1.1608,
+   "p": 0.4312
+  },
+  "entry_pos_z": {
+   "exp(coef)": 1.1857,
+   "exp(coef) lower 95%": 1.0808,
+   "exp(coef) upper 95%": 1.3008,
+   "p": 0.0003
+  },
+  "entry_pop_z": {
+   "exp(coef)": 0.8479,
+   "exp(coef) lower 95%": 0.7593,
+   "exp(coef) upper 95%": 0.9468,
+   "p": 0.0034
+  }
+ },
+ "cox_complete_pop_n": 473,
+ "cox_concordance": 0.6514784248997878,
+ "cox_n": 493,
+ "ols_logdays_completed": {
+  "const": {
+   "coef": 4.453623574993943,
+   "p": 4.9196110087494246e-11
+  },
+  "explicit_i": {
+   "coef": 0.004635579632270903,
+   "p": 0.9780969518572912
+  },
+  "single_i": {
+   "coef": -0.8162915720840781,
+   "p": 0.10858786152378291
+  },
+  "log_tracks": {
+   "coef": -0.8470334775585269,
+   "p": 0.0006393149877576812
+  },
+  "duration_z": {
+   "coef": 0.057553593870694655,
+   "p": 0.5020495553229095
+  },
+  "entry_pos_z": {
+   "coef": -0.41593706739402925,
+   "p": 5.050192347842845e-07
+  }
+ },
+ "ols_n": 443,
+ "pop_decay_by_age": {
+  "0": 66.17936117936118,
+  "1": 70.15776699029126,
+  "3": 73.22404371584699,
+  "7": 76.97472924187726,
+  "14": 79.32727272727273,
+  "21": 81.14432989690722,
+  "30": 81.76023391812865,
+  "45": 82.02189781021897,
+  "60": 82.42622950819673
+ },
+ "pop_mean_by_stage": {
+  "Decline": 81.3652449491615,
+  "Growth": 79.80393680393681,
+  "Mature": 82.16763316151203,
+  "New Entry": 72.41683366733467,
+  "Peak": 86.57770985186927,
+  "Unclassified": 84.79333333333334
+ },
+ "pop_daily_change_by_stage": {
+  "Decline": 0.03398321148118061,
+  "Growth": 0.14445893089960887,
+  "Mature": -0.031614520876485336,
+  "New Entry": 1.475257731958763,
+  "Peak": 0.0764525993883792,
+  "Unclassified": 0.22
+ },
+ "corr_pop_position": -0.2460772255198324,
+ "leadlag_dpop_vs_dpos": {
+  "-3": -0.06261864020369008,
+  "-2": -0.037741936200145695,
+  "-1": -0.03921087973471053,
+  "0": -0.015470667059726209,
+  "1": -0.01789661973155122,
+  "2": -0.014617503024498877,
+  "3": -0.0024789484971027226
+ },
+ "pop_peak_vs_rank_peak": {
+  "median_days_pop_peak": 10.0,
+  "median_days_rank_peak": 1.0,
+  "spearman": 0.7038437021641062,
+  "pop_peak_before_rank_peak_share": 0.07822410147991543,
+  "same_day_share": 0.18816067653276955
+ },
+ "peak_pop_desc": {
+  "count": 473.0,
+  "mean": 76.66384778012684,
+  "std": 12.358825827771293,
+  "min": 15.0,
+  "25%": 69.0,
+  "50%": 78.0,
+  "75%": 85.0,
+  "max": 100.0
+ },
+ "spearman_peakpop_days": [
+  0.5815969054496255,
+  5.880508849247157e-46
+ ],
+ "spearman_entrypop_days": [
+  0.19686325768565394,
+  1.0669587153503471e-05
+ ],
+ "share_enter_at_best_position": 0.5010141987829615,
+ "ttp_among_top10_reachers": {
+  "count": 150.0,
+  "mean": 12.446666666666667,
+  "std": 21.165546483420513,
+  "min": 0.0,
+  "25%": 0.0,
+  "50%": 4.5,
+  "75%": 16.0,
+  "max": 124.0
+ },
+ "pop_peak_minus_exit_mean": 2.3782505910165486,
+ "pop_by_days_to_exit": {
+  "0": 78.1734693877551,
+  "3": 78.96938775510205,
+  "7": 78.76020408163265,
+  "14": 78.53367875647669
+ },
+ "pop_by_days_to_exit_pos": {
+  "0": 46.37755102040816,
+  "3": 42.69387755102041,
+  "7": 39.93877551020408,
+  "14": 36.170984455958546
+ },
+ "early_warning": {
+  "n_train": 240,
+  "n_test": 101,
+  "cutoff": "2025-04-28",
+  "n_songs_with_3days": 383,
+  "y_survive30": {
+   "base_rate_test": 0.49504950495049505,
+   "auc_logit": 0.8674509803921568,
+   "auc_gb": 0.8227450980392157,
+   "auc_baseline_mean_pos7": 0.7352941176470589,
+   "importance": {
+    "slope7": 0.14886274509803918,
+    "mean_pos7": 0.059529411764705865,
+    "days_in7": 0.05372549019607844,
+    "best_pos7": 0.022169934640522866,
+    "mean_pop7": 0.008392156862745104,
+    "single": 0.001202614379084969,
+    "total_tracks": 0.00036601307189543984,
+    "explicit": 0.00020915032679738043,
+    "pos_std7": -0.005882352941176442,
+    "entry_position": -0.006562091503267957,
+    "duration_min": -0.017594771241830034
+   }
+  },
+  "y_top10": {
+   "base_rate_test": 0.33663366336633666,
+   "auc_logit": 0.9108867427568043,
+   "auc_gb": 0.9460052677787533,
+   "auc_baseline_mean_pos7": 0.8871817383669885,
+   "importance": {
+    "best_pos7": 0.15914544922446588,
+    "slope7": 0.10995024875621892,
+    "mean_pos7": 0.020954053263096257,
+    "total_tracks": 0.0005560433128475095,
+    "single": 0.0,
+    "days_in7": 0.0,
+    "explicit": -0.0002926543751829251,
+    "mean_pop7": -0.0003511852502195027,
+    "pos_std7": -0.0004682470002926505,
+    "entry_position": -0.0009364940005853306,
+    "duration_min": -0.006350599941469108
+   }
+  }
+ },
+ "cluster_silhouette": {
+  "3": 0.2805579918441607,
+  "4": 0.3022335174906309,
+  "5": 0.3096486049746563,
+  "6": 0.2923506880815629
+ },
+ "clusters": [
+  {
+   "cluster": 0,
+   "n": 93,
+   "mean_days": 94.817,
+   "median_days": 81.0,
+   "peak": 11.0,
+   "entry_pos": 45.0,
+   "ttp": 18.0,
+   "top10_frac": 0.131,
+   "pos_std": 10.846,
+   "explicit": 0.462,
+   "single": 0.613,
+   "right_cens": 0.161,
+   "reentry": 0.602,
+   "archetype": "Slow Burner"
+  },
+  {
+   "cluster": 1,
+   "n": 100,
+   "mean_days": 17.99,
+   "median_days": 9.5,
+   "peak": 33.5,
+   "entry_pos": 45.5,
+   "ttp": 4.0,
+   "top10_frac": 0.0,
+   "pos_std": 4.503,
+   "explicit": 0.37,
+   "single": 0.54,
+   "right_cens": 0.02,
+   "reentry": 0.54,
+   "archetype": "Bottom-Chart Filler"
+  },
+  {
+   "cluster": 2,
+   "n": 123,
+   "mean_days": 20.301,
+   "median_days": 8.0,
+   "peak": 15.0,
+   "entry_pos": 15.0,
+   "ttp": 0.0,
+   "top10_frac": 0.042,
+   "pos_std": 10.506,
+   "explicit": 0.496,
+   "single": 0.325,
+   "right_cens": 0.089,
+   "reentry": 0.179,
+   "archetype": "Debut-and-Fade"
+  },
+  {
+   "cluster": 3,
+   "n": 67,
+   "mean_days": 139.403,
+   "median_days": 118.0,
+   "peak": 2.0,
+   "entry_pos": 7.0,
+   "ttp": 4.0,
+   "top10_frac": 0.514,
+   "pos_std": 10.59,
+   "explicit": 0.403,
+   "single": 0.552,
+   "right_cens": 0.299,
+   "reentry": 0.373,
+   "archetype": "Evergreen Hit"
+  }
+ ],
+ "kpis_all": {
+  "n_songs": 543,
+  "n_songs_eligible": 493,
+  "avg_days_on_playlist": 45.83772819472617,
+  "median_days_on_playlist": 11.0,
+  "median_survival_days_km": 13.0,
+  "rmst_180": 47.16545397027293,
+  "entry_to_peak_mean": 10.33265720081136,
+  "entry_to_peak_median": 0.0,
+  "churn_rate": 0.033309090909090906,
+  "entries_per_day": 1.6654545454545455,
+  "churn_cv": 1.4519898097831547,
+  "retention_stability_index": 39.42475230663376,
+  "churn_rate_excl_shocks": 0.027201492537313434,
+  "shock_days": 14,
+  "top10_turnover": 0.05945454545454546,
+  "explicit_lifecycle_score": 100.56454974032833,
+  "single_album_longevity_ratio": 1.7134662034485755,
+  "single_album_median_ratio": 4.333333333333333,
+  "freshness_index": 0.28025806451612906,
+  "catalog_share": 0.42176344086021506
+ },
+ "kpis_explicit": {
+  "n_songs": 241,
+  "n_songs_eligible": 227,
+  "avg_days_on_playlist": 47.61233480176212,
+  "median_days_on_playlist": 11.0,
+  "median_survival_days_km": 12.0,
+  "rmst_180": 46.43691700073549,
+  "entry_to_peak_mean": 9.955947136563877,
+  "entry_to_peak_median": 0.0,
+  "churn_rate": 0.014109090909090908,
+  "entries_per_day": 0.7054545454545454,
+  "churn_cv": 2.2329477538923963,
+  "retention_stability_index": 30.49510799869619,
+  "churn_rate_excl_shocks": 0.011507352941176472,
+  "shock_days": 6,
+  "top10_turnover": 0.028181818181818183,
+  "explicit_lifecycle_score": null,
+  "single_album_longevity_ratio": 1.3574896868871305,
+  "single_album_median_ratio": 3.4285714285714284,
+  "freshness_index": 0.2786885245901639,
+  "catalog_share": 0.4171779141104294
+ },
+ "kpis_clean": {
+  "n_songs": 302,
+  "n_songs_eligible": 266,
+  "avg_days_on_playlist": 44.32330827067669,
+  "median_days_on_playlist": 10.0,
+  "median_survival_days_km": 14.0,
+  "rmst_180": 47.73037509071595,
+  "entry_to_peak_mean": 10.654135338345865,
+  "entry_to_peak_median": 1.0,
+  "churn_rate": 0.019418181818181817,
+  "entries_per_day": 0.9709090909090909,
+  "churn_cv": 1.6016151781021912,
+  "retention_stability_index": 37.69127065506769,
+  "churn_rate_excl_shocks": 0.01772893772893773,
+  "shock_days": 4,
+  "top10_turnover": 0.03163636363636364,
+  "explicit_lifecycle_score": null,
+  "single_album_longevity_ratio": 2.242146290979502,
+  "single_album_median_ratio": 4.333333333333333,
+  "freshness_index": 0.2814308258811152,
+  "catalog_share": 0.4251897497557676
+ },
+ "kpis_single": {
+  "n_songs": 257,
+  "n_songs_eligible": 229,
+  "avg_days_on_playlist": 58.99126637554585,
+  "median_days_on_playlist": 26.0,
+  "median_survival_days_km": 28.0,
+  "rmst_180": 58.8724590614514,
+  "entry_to_peak_mean": 11.039301310043669,
+  "entry_to_peak_median": 4.0,
+  "churn_rate": 0.0168,
+  "entries_per_day": 0.84,
+  "churn_cv": 1.2751968769547497,
+  "retention_stability_index": 43.21384272098551,
+  "churn_rate_excl_shocks": 0.016539162112932604,
+  "shock_days": 1,
+  "top10_turnover": 0.03327272727272727,
+  "explicit_lifecycle_score": 82.56277597046497,
+  "single_album_longevity_ratio": null,
+  "single_album_median_ratio": null,
+  "freshness_index": 0.28862840615009894,
+  "catalog_share": 0.39945197138072763
+ },
+ "kpis_album": {
+  "n_songs": 286,
+  "n_songs_eligible": 264,
+  "avg_days_on_playlist": 34.428030303030305,
+  "median_days_on_playlist": 6.0,
+  "median_survival_days_km": 8.0,
+  "rmst_180": 36.43656952669914,
+  "entry_to_peak_mean": 9.719696969696969,
+  "entry_to_peak_median": 0.0,
+  "churn_rate": 0.01781818181818182,
+  "entries_per_day": 0.8909090909090909,
+  "churn_cv": 2.531927359731452,
+  "retention_stability_index": 27.80866416959656,
+  "churn_rate_excl_shocks": 0.012319109461966606,
+  "shock_days": 11,
+  "top10_turnover": 0.02654545454545455,
+  "explicit_lifecycle_score": 171.7567395072269,
+  "single_album_longevity_ratio": null,
+  "single_album_median_ratio": null,
+  "freshness_index": 0.26938291139240506,
+  "catalog_share": 0.450751582278481
+ },
+ "freshness_by_month": {
+  "2024-08": 0.245,
+  "2024-09": 0.27466666666666667,
+  "2024-10": 0.4503225806451613,
+  "2024-11": 0.23266666666666666,
+  "2024-12": 0.20709677419354838,
+  "2025-01": 0.17935483870967742,
+  "2025-02": 0.27714285714285714,
+  "2025-03": 0.3117241379310345,
+  "2025-04": 0.354,
+  "2025-05": 0.3735483870967742,
+  "2025-06": 0.27266666666666667,
+  "2025-07": 0.2846666666666667,
+  "2025-08": 0.216,
+  "2025-09": 0.21066666666666667,
+  "2025-10": 0.22516129032258064,
+  "2025-11": 0.36074074074074075
+ },
+ "catalog_by_month": {
+  "2024-08": 0.43875,
+  "2024-09": 0.442,
+  "2024-10": 0.31225806451612903,
+  "2024-11": 0.354,
+  "2024-12": 0.4341935483870968,
+  "2025-01": 0.584516129032258,
+  "2025-02": 0.5457142857142857,
+  "2025-03": 0.48,
+  "2025-04": 0.3893333333333333,
+  "2025-05": 0.22,
+  "2025-06": 0.3466666666666667,
+  "2025-07": 0.422,
+  "2025-08": 0.43733333333333335,
+  "2025-09": 0.4653333333333333,
+  "2025-10": 0.5064516129032258,
+  "2025-11": 0.38592592592592595
+ },
+ "age_mix_overall": {
+  "le7": 0.10632258064516129,
+  "le30": 0.28025806451612906,
+  "gt90": 0.42176344086021506
+ },
+ "avg_chart_age_top10": 53.10602150537635,
+ "avg_chart_age_bottom10": 109.41440860215054,
+ "top1_holders": 37,
+ "top1_most_days": {
+  "Si Antes Te Hubiera Conocido \u2014 KAROL G": 86,
+  "Columbia \u2014 Quevedo": 60,
+  "Si No Est\u00e1s \u2014 i\u00f1igo quintero": 51,
+  "Manos Rotas \u2014 DELLAFUENTE": 44,
+  "BADGYAL \u2014 SAIKO": 40
+ },
+ "longest_songs": [
+  {
+   "label": "La Bachata \u2014 Manuel Turizo",
+   "total_days": 538,
+   "peak_position": 11,
+   "left_censored": true,
+   "right_censored": false
+  },
+  {
+   "label": "El Merengue \u2014 Marshmello",
+   "total_days": 487,
+   "peak_position": 5,
+   "left_censored": true,
+   "right_censored": false
+  },
+  {
+   "label": "Columbia \u2014 Quevedo",
+   "total_days": 463,
+   "peak_position": 1,
+   "left_censored": false,
+   "right_censored": false
+  },
+  {
+   "label": "VAGABUNDO \u2014 Sebastian Yatra",
+   "total_days": 388,
+   "peak_position": 3,
+   "left_censored": true,
+   "right_censored": false
+  },
+  {
+   "label": "LA FALDA \u2014 Myke Towers",
+   "total_days": 359,
+   "peak_position": 1,
+   "left_censored": false,
+   "right_censored": false
+  },
+  {
+   "label": "LUNA \u2014 Feid",
+   "total_days": 357,
+   "peak_position": 2,
+   "left_censored": false,
+   "right_censored": true
+  },
+  {
+   "label": "QLONA \u2014 KAROL G",
+   "total_days": 342,
+   "peak_position": 8,
+   "left_censored": false,
+   "right_censored": false
+  },
+  {
+   "label": "Manos Rotas \u2014 DELLAFUENTE",
+   "total_days": 329,
+   "peak_position": 1,
+   "left_censored": false,
+   "right_censored": false
+  }
+ ],
+ "most_explicit_top10_periods": null
+}

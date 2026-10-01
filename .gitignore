@@ -1,0 +1,21 @@
+# Environments & virtualenvs
+.venv/
+env/
+venv/
+ENV/
+
+# Dependencies
+node_modules/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# OS artifacts
+.DS_Store
+Thumbs.db
