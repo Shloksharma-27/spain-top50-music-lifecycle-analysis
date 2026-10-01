@@ -1,9 +1,11 @@
 # 🎧 Spain Top 50: Content Maturity, Release Lifecycle & Playlist Rotation Analysis
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](http://localhost:8503)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://shloksharma-27-spain-top50-music-lifecycle-analysis-app-1hubhb.streamlit.app/)
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Research: Atlantic Records](https://img.shields.io/badge/Client-Atlantic%20Recording%20Corp-blue)](https://www.atlanticrecords.com/)
+
+**🌐 Live Production Dashboard:** [https://shloksharma-27-spain-top50-music-lifecycle-analysis-app-1hubhb.streamlit.app/](https://shloksharma-27-spain-top50-music-lifecycle-analysis-app-1hubhb.streamlit.app/)
 
 An empirical music streaming intelligence and lifecycle velocity suite built for **Atlantic Recording Corporation** and **Unified Mentor**. Analyzes **555 consecutive daily snapshots** of Spain's Top 50 playlist (27,800 observations) to optimize release pacing, catalog monetization, and playlist retention strategies.
 
